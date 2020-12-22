@@ -1,0 +1,308 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20201219.204555.10644.0.001.json",
+    "dumpEventTime": "2020-12-19T20:45:55Z",
+    "dumpEventTimeStamp": "1608390955812",
+    "processId": 10644,
+    "cwd": "C:\\Official\\R&D\\MS Teams\\test bots\\dilaer-yo-me",
+    "commandLine": [
+      "node",
+      "C:\\Users\\sumar\\AppData\\Roaming\\npm\\\\node_modules\\gulp-cli\\bin\\gulp.js",
+      "ngrok-serve"
+    ],
+    "nodejsVersion": "v12.4.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.4.0",
+      "v8": "7.4.288.27-node.18",
+      "uv": "1.29.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.38.0",
+      "napi": "4",
+      "llhttp": "1.1.3",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.4.0/node-v12.4.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.4.0/node-v12.4.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.4.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.19041",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "host": "IN-PC087NNB"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7c87e64a9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+9161"
+    },
+    {
+      "pc": "0x00007ff7c87e9d94",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+23732"
+    },
+    {
+      "pc": "0x00007ff7c87e8db8",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+19672"
+    },
+    {
+      "pc": "0x00007ff7c88d256b",
+      "symbol": "uv_loop_fork+48251"
+    },
+    {
+      "pc": "0x00007ff7c8c0a56e",
+      "symbol": "v8::internal::Parser::ReportMessageAt+206"
+    },
+    {
+      "pc": "0x00007ff7c8bde5ea",
+      "symbol": "v8::internal::wasm::StreamingDecoder::Fail+666"
+    },
+    {
+      "pc": "0x00007ff7c8c74a3c",
+      "symbol": "v8::internal::Heap::CreateFillerObjectAt+2972"
+    },
+    {
+      "pc": "0x00007ff7c8c7c7af",
+      "symbol": "v8::internal::LocalEmbedderHeapTracer::NotifyV8MarkingWorklistWasEmpty+5375"
+    },
+    {
+      "pc": "0x00007ff7c8c72e23",
+      "symbol": "v8::internal::Heap::CollectGarbage+1235"
+    },
+    {
+      "pc": "0x00007ff7c8c71524",
+      "symbol": "v8::internal::GCTracer::AddScopeSample+1316"
+    },
+    {
+      "pc": "0x00007ff7c8cb2153",
+      "symbol": "v8::internal::Factory::NewFillerObject+67"
+    },
+    {
+      "pc": "0x00007ff7c8fd8cc6",
+      "symbol": "v8::internal::OptimizingCompileDispatcher::Unblock+116966"
+    },
+    {
+      "pc": "0x00007ff7c9474196",
+      "symbol": "v8::internal::NativesCollection<0>::GetScriptsSource+662454"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2148151296,
+    "totalCommittedMemory": 2148151296,
+    "usedMemory": 2113761456,
+    "availableMemory": 52363368,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 524288,
+        "capacity": 523976,
+        "used": 31712,
+        "available": 492264
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2097152,
+        "capacity": 1047952,
+        "used": 35352,
+        "available": 1012600
+      },
+      "old_space": {
+        "memorySize": 2030166016,
+        "committedMemory": 2030166016,
+        "capacity": 2002321624,
+        "used": 2002175072,
+        "available": 146552
+      },
+      "code_space": {
+        "memorySize": 6979584,
+        "committedMemory": 6979584,
+        "capacity": 5565728,
+        "used": 5565728,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 5246976,
+        "committedMemory": 5246976,
+        "capacity": 3030160,
+        "used": 3030160,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 102514688,
+        "committedMemory": 102514688,
+        "capacity": 102373128,
+        "used": 102373128,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 550304,
+        "used": 550304,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047952,
+        "used": 0,
+        "available": 1047952
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 357.796,
+    "kernelCpuSeconds": 41.14,
+    "cpuConsumptionPercent": 2.78879,
+    "maxRss": 2196717568,
+    "pageFaults": {
+      "IORequired": 1274396,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 71372,
+      "writes": 89
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=::": "::\\",
+    "=C:": "C:\\Official\\R&D\\MS Teams\\test bots\\dilaer-yo-me",
+    "=G:": "G:\\",
+    "=P:": "P:\\",
+    "=T:": "T:\\",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\sumar\\AppData\\Roaming",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "",
+    "APPLICATION_ID": "a45e8700-41b0-11eb-b773-49ea95670cc0",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132493643258715009",
+    "ChocolateyToolsLocation": "C:\\tools",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "IN-PC087NNB",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "CONNECTOR_ID": "",
+    "DEBUG": "msteams",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\sumar",
+    "HOSTNAME": "71d91548740d.ngrok.io",
+    "INIT_CWD": "C:\\Official\\R&D\\MS Teams\\test bots\\dilaer-yo-me",
+    "LOCALAPPDATA": "C:\\Users\\sumar\\AppData\\Local",
+    "LOGONSERVER": "\\\\OTTADC02",
+    "MICROSOFT_APP_ID": "ec9e2e11-46a4-4e01-9263-251e7453a748",
+    "MICROSOFT_APP_PASSWORD": "t92RRZ5j2_spTz-19dQi-VwD4dx_r4hjLv",
+    "myvaribale": "hello",
+    "NGROK_AUTH": "",
+    "NGROK_REGION": "",
+    "NGROK_SUBDOMAIN": "",
+    "NUMBER_OF_PROCESSORS": "4",
+    "NVM_HOME": "C:\\Users\\sumar\\AppData\\Roaming\\nvm",
+    "NVM_SYMLINK": "C:\\Program Files\\nodejs",
+    "OneDrive": "C:\\Users\\sumar\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\sumar\\OneDrive",
+    "OPENSSL_CONF": "C:\\Program Files\\OpenSSL-Win64\\bin\\openssl.cfg",
+    "OS": "Windows_NT",
+    "PACKAGE_NAME": "dilaeryome",
+    "Path": "C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Python27\\;C:\\Python27\\Scripts;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Mitel\\Connect\\;C:\\Program Files\\Perforce\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\dotnet\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Users\\sumar\\AppData\\Local\\Programs\\Python\\Python37-32;C:\\Users\\sumar\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Python37;C:\\Program Files\\Amazon\\AWSCLI\\bin\\;C:\\Users\\sumar\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\b;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Python27\\;C:\\Python27\\Scripts;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Mitel\\Connect\\;C:\\Program Files\\Perforce\\;C:\\Users\\sumar\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Users\\sumar\\AppData\\Roaming\\nvm;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\dotnet\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Users\\sumar\\AppData\\Local\\Programs\\Python\\Python37-32;C:\\Users\\sumar\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Apache;C:\\Users\\sumar\\AppData\\Roaming\\npm;C:\\Users\\sumar\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\nodejs;C:\\Users\\sumar\\AppData\\Local\\Programs\\Fiddler;C:\\Program Files\\Java\\jdk-12.0.2\\bin;C:\\Users\\sumar\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\sumar\\.dotnet\\tools;C:\\Program Files\\OpenSSL-Win64\\bin;",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC;.PY;.PYW",
+    "PORT": "3007",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 61 Stepping 4, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "3d04",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "SECURITY_TOKEN": "",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\sumar\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\sumar\\AppData\\Local\\Temp",
+    "UATDATA": "C:\\WINDOWS\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77",
+    "USERDNSDOMAIN": "MITEL.COM",
+    "USERDOMAIN": "MITEL",
+    "USERDOMAIN_ROAMINGPROFILE": "MITEL",
+    "USERNAME": "umars",
+    "USERPROFILE": "C:\\Users\\sumar",
+    "VERSION": "0.0.1",
+    "VS140COMNTOOLS": "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\",
+    "windir": "C:\\WINDOWS"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\SYSFER.DLL",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\UMPDC.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll",
+    "\\\\?\\C:\\Official\\R&D\\MS Teams\\test bots\\dilaer-yo-me\\node_modules\\node-sass\\vendor\\win32-x64-72\\binding.node",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll"
+  ]
+}
