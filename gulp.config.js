@@ -59,7 +59,7 @@ const config = {
     }
     ],
     // This is the name of the packaged manifest file
-    manifestFileName: "dilaer-yo-me.zip"
+    manifestFileName: "mitel-dialer-bot.zip"
 };
 
 module.exports = config;

@@ -24,7 +24,17 @@
   },
   "accentColor": "#D85028",
   "configurableTabs": [],
-  "staticTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "index",
+      "name": "Call",
+      "contentUrl": "https://d3nn161xdywwor.cloudfront.net/#/tab",
+      "websiteUrl": "https://www.mitel.com",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
   "bots": [],
   "connectors": [],
   "composeExtensions": [
@@ -52,7 +62,10 @@
   ],
   "validDomains": [
     "{{HOSTNAME}}",
-    "d3nn161xdywwor.cloudfront.net"
+    "d3nn161xdywwor.cloudfront.net",
+    "meet.mitel.io",
+    "workflow.mitel.io",
+    "auth.mitel.io"
   ],
   "showLoadingIndicator": false,
   "isFullScreen": false
