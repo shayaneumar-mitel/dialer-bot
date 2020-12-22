@@ -16,7 +16,8 @@ export default class DialerMessagingExtensionMessageExtension implements IMessag
             type: "continue",
             value: {
                 url: `https://d3nn161xdywwor.cloudfront.net/#/conv-member`,
-                height: "medium"
+                height: "medium",
+                width: "medium"
             }
         });
     }
