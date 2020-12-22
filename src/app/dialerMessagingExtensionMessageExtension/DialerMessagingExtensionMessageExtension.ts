@@ -19,7 +19,6 @@ export default class DialerMessagingExtensionMessageExtension implements IMessag
         return Promise.resolve<TaskModuleContinueResponse>({
             type: "continue",
             value: {
-                title: "Mitel Assistant",
                 url: `https://d3nn161xdywwor.cloudfront.net/#/conv-member`,
                 height: "medium"
             }
