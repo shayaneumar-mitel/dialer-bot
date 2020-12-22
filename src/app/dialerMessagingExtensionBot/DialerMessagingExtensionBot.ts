@@ -2,9 +2,7 @@ import { BotDeclaration, MessageExtensionDeclaration } from "express-msteams-hos
 import * as debug from "debug";
 import { DialogSet, DialogState } from "botbuilder-dialogs";
 import DialerMessagingExtensionMessageExtension from "../dialerMessagingExtensionMessageExtension/DialerMessagingExtensionMessageExtension";
-import { StatePropertyAccessor, CardFactory, TurnContext, MemoryStorage, ConversationState, ActivityTypes, TeamsActivityHandler } from "botbuilder";
-
-
+import { StatePropertyAccessor, MemoryStorage, ConversationState, TeamsActivityHandler } from "botbuilder";
 
 // Initialize debug logging module
 const log = debug("msteams");
@@ -34,14 +32,8 @@ export class DialerMessagingExtensionBot extends TeamsActivityHandler {
         super();
         // Message extension DialerMessagingExtensionMessageExtension
         this._dialerMessagingExtensionMessageExtension = new DialerMessagingExtensionMessageExtension();
-
-
         this.conversationState = conversationState;
         this.dialogState = conversationState.createProperty("dialogState");
         this.dialogs = new DialogSet(this.dialogState);
-
-
     }
-
-
 }
