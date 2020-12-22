@@ -11,12 +11,12 @@
     "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
   },
   "name": {
-    "short": "Dialer messaging extension",
-    "full": "Dialer messaging extension"
+    "short": "Mitel Dialer",
+    "full": "Mitel Dialer"
   },
   "description": {
-    "short": "TODO: add short description here",
-    "full": "TODO: add full description here"
+    "short": "Mitel Dialer",
+    "full": "Mitel Dialer"
   },
   "icons": {
     "outline": "icon-outline.png",
@@ -34,7 +34,7 @@
       "commands": [
         {
           "id": "dialerMessagingExtensionMessageExtension",
-          "title": "Dialer Messaging Extension",
+          "title": "Mitel Dialer",
           "description": "Add a clever description here",
           "initialRun": true,
           "type": "action",

@@ -1,7 +1,7 @@
 {
-  "name": "dilaeryome",
+  "name": "mitel-dialer-bot",
   "version": "0.0.1",
-  "description": "Generate a Microsoft Teams application.",
+  "description": "Bot for supporting call from MS teams",
   "scripts": {
     "start": "node dist/server.js",
     "build": "gulp build",
