@@ -63,9 +63,7 @@
   "validDomains": [
     "{{HOSTNAME}}",
     "d3nn161xdywwor.cloudfront.net",
-    "meet.mitel.io",
-    "workflow.mitel.io",
-    "auth.mitel.io"
+    "6b4f0e161a41.ngrok.io"
   ],
   "showLoadingIndicator": false,
   "isFullScreen": false
